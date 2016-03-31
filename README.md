@@ -4,6 +4,10 @@
 それを変更することが出来ます。
 ただし、ゲーム起動前時のみ変更できます。
 
+一人称視点で、ターゲットとする男の顔の選択機能を追加した
+[Camera Utility](https://github.com/qucucu/CM3D2CameraUtility.Plugin)と併用するといいと思います。
+（同一BODYだと切り替え順がわかりにくいので）
+
 
 ##適用方法
 
