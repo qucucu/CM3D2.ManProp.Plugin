@@ -7,6 +7,9 @@
 
 ##適用方法
 
+[release](https://github.com/qucucu/CM3D2.ManProp.Plugin/releases)からダウンロードしてください。
+
+その後、
 「CM3D2.ManProp.Plugin.dll」を「UnityInjectorフォルダ」、
 「Config/ManProp.ini」を「UnityInjector/Configフォルダ」に入れてください。
 
