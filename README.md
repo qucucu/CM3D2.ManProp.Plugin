@@ -5,8 +5,8 @@
 ただし、ゲーム起動前時のみ変更できます。
 
 一人称視点のターゲットとする男を選択する機能を追加した
-[Camera Utility](https://github.com/qucucu/CM3D2CameraUtility.Plugin)と併用するといいと思います。
-（同一BODYだと切り替え順がわかりにくいので）
+[Camera Utility](https://github.com/qucucu/CM3D2CameraUtility.Plugin/tree/qucucu/dev)と併用するといいと思います。
+（同一BODYだと切り替え順がわかりにくいので。要コンパイル）
 
 
 ##適用方法
