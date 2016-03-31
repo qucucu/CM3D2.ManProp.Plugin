@@ -1,32 +1,32 @@
 #CM3D2.ManProp.Plugin
 
-�W���ł�2�l�ځE3�l�ڂ̒j�ɂ́umhead001_i_.menu�v���K�p����܂����A
-�����ύX���邱�Ƃ��o���܂��B
-�������A�Q�[���N���O���̂ݕύX�ł��܂��B
+標準では2人目・3人目の男には「mhead001_i_.menu」が適用されますが、
+それを変更することが出来ます。
+ただし、ゲーム起動前時のみ変更できます。
 
 
-##�K�p���@
+##適用方法
 
-�uCM3D2.ManProp.Plugin.dll�v���uUnityInjector�t�H���_�v�A
-�uConfig/ManProp.ini�v���uUnityInjector/Config�t�H���_�v�ɓ���Ă��������B
-
-
-##MENU�̕ύX���@
-ManProp.ini���ȉ����Q�l�ɏ��������Ă��������B
-
-*0=�i2�l�ڂɓK�p����MENU�t�@�C�����j
-*1=�i3�l�ڂɓK�p����MENU�t�@�C�����j
-
-�i2=4�l��... �ƑΉ����Ă��܂����A���݌�����3�l�ȏ�̏�ʂ͂Ȃ��Ǝv���܂��j
-
-�W���̒jMENU�t�@�C�����́umhead000_i_.menu�v...�umhead004_i_.menu�v�ł��B
+「CM3D2.ManProp.Plugin.dll」を「UnityInjectorフォルダ」、
+「Config/ManProp.ini」を「UnityInjector/Configフォルダ」に入れてください。
 
 
-##�j�p�Z�b�g��MENU�t�@�C���ɂ��āi�C�Ӂj
+##MENUの変更方法
+ManProp.iniを以下を参考に書き換えてください。
 
-�́E��E�e���l���ׂ��������������ꍇ�́A�Z�b�gMENU�t�@�C�����쐬������@���I�X�X�����܂��B
-�uMenuSample/_man1_i.menu�v���Q�l�ɏ��������A���΂肷�ȂǂŃQ�[�����ɒǉ����Ă��������B
+* 0=（2人目に適用するMENUファイル名）
+* 1=（3人目に適用するMENUファイル名）
 
-##�X�V����
+（2=4人目... と対応していますが、現在公式で3人以上の場面はないと思います）
 
-1.0.0.0 ����
+標準の男MENUファイル名は「mhead000_i_.menu」...「mhead004_i_.menu」です。
+
+
+##男用セットのMENUファイルについて（任意）
+
+体・顔・各数値を細かく調整したい場合は、セットMENUファイルを作成する方法をオススメします。
+「MenuSample/_man1_i.menu」を参考に書き換え、しばりすなどでゲーム内に追加してください。
+
+##更新履歴
+
+1.0.0.0 初版
