@@ -39,19 +39,23 @@ namespace CM3D2.ManProp.Plugin
 
         public void OnLevelWasLoaded(int level)
         {
-            if(level == 14 || level == 24) {
+            if (level == 14 || level == 15 || level == 24) {
                 var characterMgr = GameMain.Instance.CharacterMgr;
                 var menus = config.manMenu;
-                for (int number = 1; number < characterMgr.GetManCount(); number++)
+                var man_count = characterMgr.GetManCount();
+                for (int number = 1; number < man_count; number++)
                 {
                     var index = number - 1;
-                    if (menus.Length <= index)
-                        break;
                     var menu = menus[index];
-
+                    Debug.Log("ManProp::Load Man[" + index + "] " + menu);
                     var man = characterMgr.GetMan(number);
-                    man.SetProp(MPN.head, menu, 0);
-                    man.AllProcProp();
+                    if (menus.Length <= index || man == null)
+                    {
+                        break;
+                    }
+
+                    man.SetProp(MPN.head, menu, menu.ToLower().GetHashCode(), false);
+                    man.AllProcPropSeqStart();
                 }
             }
         }
